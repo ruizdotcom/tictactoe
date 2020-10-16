@@ -4,9 +4,8 @@
 
 // use require without a reference to ensure a file is bundled
 // require('./example')
-const events = require('./templates/events')
+const events = require('./extra/events.js')
 $(() => {
   // your JS code goes here
-  $('sign-up-form').on('submit', events.onSignUp)
-  $('sign-up-form').on('submit', events.onSignUp)
+  $('#sign-up-email').on('submit', events.onSignUpEmail)
 })
