@@ -15,6 +15,34 @@ const onSignUpEmail = event => {
     .catch(ui.signUpFailed)
 }
 
+const onSignInEmail = event => {
+  event.preventDefault()
+  console.log('yay! it works!')
+
+  const form = event.target
+
+  const data = getFormFields(form)
+
+  api.signInData(data)
+    .then(ui.signInSuccessful)
+    .catch(ui.signInFailed)
+}
+
+const changePasswordEmail = event => {
+  event.preventDefault()
+  console.log('yay! it works!')
+
+  const form = event.target
+
+  const data = getFormFields(form)
+
+  api.changePasswordData(data)
+    .then(ui.changePasswordSuccessful)
+    .catch(ui.chanePasswordFailed)
+}
+
 module.exports = {
-  onSignUpEmail
+  onSignUpEmail,
+  onSignInEmail,
+  changePasswordEmail
 }

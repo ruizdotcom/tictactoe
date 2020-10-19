@@ -8,4 +8,6 @@ const events = require('./extra/events.js')
 $(() => {
   // your JS code goes here
   $('#sign-up-email').on('submit', events.onSignUpEmail)
+  $('#sign-in-email').on('submit', events.onSignInEmail)
+  $('#change-password-email').on('submit', events.onChangePasswordEmail)
 })
