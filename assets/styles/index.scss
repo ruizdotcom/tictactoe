@@ -1,1 +1,47 @@
 @import '~bootstrap/scss/bootstrap';
+
+body {
+  background-image: linear-gradient(pink, MediumPurple);
+}
+
+#sign-up-id {
+  display: block;
+  float: left;
+}
+
+h1 {
+  text-align: center;
+  font-size: 12vh;
+  text-shadow: 3px 3px rgba(0, 0, 0, .25);
+}
+
+.container {
+  height: 100vh;
+}
+
+.board {
+  margin: auto;
+  max-height: calc(100vh - 75px);
+  max-width: calc(100vh - 75px);
+}
+
+.box {
+  border-right: 7px solid black;
+  border-bottom: 7px solid black;
+  border-radius: 25px;
+
+  &:nth-child(3n) {
+    border-right: 0;
+  }
+
+  &:nth-last-child(-1n + 3){
+    border-bottom: 0;
+  }
+
+  min-height: calc(100% / 3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15vh;
+  text-shadow: 3px 3px rgba(0, 0, 0, .25)
+}

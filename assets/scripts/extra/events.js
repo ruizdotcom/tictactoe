@@ -67,10 +67,28 @@ const onNewGameCreate = event => {
     .catch(ui.newGameFailed)
 }
 
+const gameBoard = [
+  '', '', '',
+  '', '', '',
+  '', '', ''
+]
+
+$(() => {
+  let playerOne = 'x'
+  const onBoxClick = (event) => {
+    console.log('click')
+    const box = $(event.target)
+    box.text(playerOne)
+    playerOne = playerOne === 'O' ? 'X' : 'O'
+  }
+  $('.box').on('click', onBoxClick)
+})
+
 module.exports = {
   onSignUpEmail,
   onSignInEmail,
   onChangePasswordEmail,
   onSignOutEmail,
-  onNewGameCreate
+  onNewGameCreate,
+  gameBoard
 }
