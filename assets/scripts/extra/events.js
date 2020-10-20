@@ -28,7 +28,7 @@ const onSignInEmail = event => {
     .catch(ui.signInFailed)
 }
 
-const changePasswordEmail = event => {
+const onChangePasswordEmail = event => {
   event.preventDefault()
   console.log('yay! it works!')
 
@@ -41,8 +41,36 @@ const changePasswordEmail = event => {
     .catch(ui.chanePasswordFailed)
 }
 
+const onSignOutEmail = event => {
+  event.preventDefault()
+  console.log('yay! it works!')
+
+  const form = event.target
+
+  const data = getFormFields(form)
+
+  api.SignOutData(data)
+    .then(ui.signOutSuccessful)
+    .catch(ui.signOutFailed)
+}
+
+const onNewGameCreate = event => {
+  event.preventDefault()
+  console.log('wohoo! it works!')
+
+  const form = event.target
+
+  const data = getFormFields(form)
+
+  api.newGameData(data)
+    .then(ui.newGameSuccessful)
+    .catch(ui.newGameFailed)
+}
+
 module.exports = {
   onSignUpEmail,
   onSignInEmail,
-  changePasswordEmail
+  onChangePasswordEmail,
+  onSignOutEmail,
+  onNewGameCreate
 }

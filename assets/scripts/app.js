@@ -10,4 +10,6 @@ $(() => {
   $('#sign-up-email').on('submit', events.onSignUpEmail)
   $('#sign-in-email').on('submit', events.onSignInEmail)
   $('#change-password-email').on('submit', events.onChangePasswordEmail)
+  $('#sign-out-email').on('submit', events.onSignOutEmail)
+  $('#new-game-create').on('submit', events.onNewGameCreate)
 })

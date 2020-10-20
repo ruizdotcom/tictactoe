@@ -21,11 +21,29 @@ const changePasswordFailed = function () {
   $('#message').text('It looks like something went wrong, please try again!')
 }
 
+const signOutSuccessful = function (response) {
+  $('#message').text('You have successfully signed out!')
+}
+const signOutFailed = function () {
+  $('#message').text('It looks like something went wrong, try signing out again!')
+}
+
+const newGameSuccessful = function (response) {
+  $('#message').text('You have successfully created a new game!')
+}
+const newGameFailed = function () {
+  $('#message').text('It looks like something went wrong, please try again!')
+}
+
 module.exports = {
   signUpSuccessful,
   signUpFailed,
   signInSuccessful,
   signInFailed,
   changePasswordSuccessful,
-  changePasswordFailed
+  changePasswordFailed,
+  signOutSuccessful,
+  signOutFailed,
+  newGameSuccessful,
+  newGameFailed
 }
