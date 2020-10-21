@@ -2,11 +2,32 @@
 
 body {
   background-image: linear-gradient(pink, MediumPurple);
+  text-align: center;
 }
 
-#sign-up-id {
+label {
   display: block;
-  float: left;
+}
+
+input[type=text], input[type=password] {
+  width: 50vh;
+  padding: 12px 20px;
+  margin: 5px 20px;
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 9px;
+}
+
+button {
+  display: block;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h4 {
+  text-align: center;
 }
 
 h1 {
