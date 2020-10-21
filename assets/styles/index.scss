@@ -15,10 +15,11 @@ input[type=text], input[type=password] {
   margin: 5px 20px;
   display: inline-block;
   border: 1px solid black;
-  border-radius: 9px;
+  border-radius: 5px;
 }
 
 button {
+  width: 50vh;
   display: block;
   margin: 10px;
   display: flex;
