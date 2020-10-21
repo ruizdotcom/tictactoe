@@ -74,7 +74,7 @@ const gameBoard = [
 ]
 
 $(() => {
-  let playerOne = 'x'
+  let playerOne = 'X'
   const onBoxClick = (event) => {
     console.log('click')
     const box = $(event.target)

@@ -3,7 +3,7 @@ const signUpSuccessful = function (response) {
   $('#message').text('Congratulations ' + response.user.email + '! You have signed up successfully!')
 }
 const signUpFailed = function () {
-  $('#message').text('It looks like something went wrong, please try again!')
+  $('#message').text('Uh oh! It looks like something went wrong, please try again!')
 }
 
 const signInSuccessful = function (response) {
@@ -27,6 +27,8 @@ const signOutSuccessful = function (response) {
 const signOutFailed = function () {
   $('#message').text('It looks like something went wrong, try signing out again!')
 }
+
+// game stuff V
 
 const newGameSuccessful = function (response) {
   $('#message').text('You have successfully created a new game!')

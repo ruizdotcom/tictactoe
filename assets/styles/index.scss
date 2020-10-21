@@ -7,6 +7,12 @@ body {
   text-shadow: 1px 1px rgba(0, 0, 0, .5);
 }
 
+#message {
+  color: LightSalmon;
+  font-size: 25px;
+  text-shadow: 1px 1px rgba(0, 0, 0, .2);
+}
+
 h3 {
   margin-top: 80px;
   margin-bottom: 50px;
@@ -45,6 +51,10 @@ button {
 
 button:hover {
   background-color: LightSalmon;
+}
+
+button:enabled {
+  outline-color: LightSalmon;
 }
 
 h1 {

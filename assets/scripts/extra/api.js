@@ -37,6 +37,8 @@ const SignOutData = function (data) {
   })
 }
 
+// game stuff V
+
 const newGameData = function (data) {
   return $.ajax({
     url: config.apiUrl + '/games',

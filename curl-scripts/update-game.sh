@@ -8,10 +8,13 @@ curl "${API}${URL_PATH}/${ID}" \
   --request PATCH \
   --header "Content-Type: application/json" \
   --data '{
-    "book": {
-      "title": "'"${TITLE}"'",
-      "author": "'"${AUTHOR}"'"
-    }
-  }'
+  "game": {
+    "cell": {
+      "index": "'"${index}"'",
+      "value": "'"${value}"'",
+    },
+    "over": "'"${over}"'"
+  }
+}'
 
 echo
